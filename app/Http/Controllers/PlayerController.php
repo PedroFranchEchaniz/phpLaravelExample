@@ -42,4 +42,6 @@ class PlayerController extends Controller
         $player -> update ($validateData);
         return response()->json($player, 200);
     }
+
+    //eliminar un player
 }
