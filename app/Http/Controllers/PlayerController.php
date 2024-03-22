@@ -44,4 +44,8 @@ class PlayerController extends Controller
     }
 
     //eliminar un player
+    public function delete (Request $request){
+        $player -> delete();
+        return response()->json(null, 204);
+    }
 }
